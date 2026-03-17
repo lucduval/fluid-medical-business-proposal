@@ -183,7 +183,7 @@ export default function Page() {
             id="current-stack"
             label="Section 2"
             title="Recommended Stack"
-            intro="The foundation is already there and it's solid. Everything I'm proposing builds on top of what exists. No starting over, no migration risk."
+            intro="The existing platform is already built on a best-in-class, production-ready stack. This proposal builds on top of it — there is no need to rebuild from scratch."
           >
             <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
               <StackBadge layer="Frontend" tech="Next.js (App Router)" icon="▲" />
