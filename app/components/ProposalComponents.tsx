@@ -148,23 +148,23 @@ export function Comparison() {
     'Not built for aesthetics, longevity, or sport medicine workflows',
     'No aesthetic planner for recording injection sites',
     'No WhatsApp survey tool for patient engagement',
-    'Slow to customise — requests go into a backlog',
-    'Per-seat licensing scales with every new doctor',
-    'Data lock-in — migration is painful and incomplete',
-    'Generic UI — unnecessary clicks and workarounds',
+    'Slow to customise. Feature requests go into a backlog.',
+    'Per-seat licensing that scales with every new doctor.',
+    'Data lock-in. Migration is painful and rarely complete.',
+    'Generic UI with unnecessary clicks and workarounds.',
   ];
   const customPros = [
     'Built around Fluid Medical\'s actual workflow',
     'Aesthetic planner, WhatsApp surveys, prescription generator',
-    'You own your data — no lock-in, exportable any time',
-    'Instant iteration — new features shipped in days',
-    'Scales cheaply — no per-seat licensing',
-    'Heidi integration built natively',
+    'You own your data with no lock-in, exportable any time.',
+    'Fast iteration. New features shipped in days.',
+    'Scales without per-seat costs.',
+    'Heidi integration built natively.',
   ];
   const customCons = [
-    'Higher upfront cost — investment required before go-live',
-    'Build time — Phase 1 takes approximately 6–8 weeks',
-    'Single developer dependency (mitigated by clean code & retainer)',
+    'Higher upfront investment before go-live.',
+    'Phase 1 takes around 3 to 4 weeks to build.',
+    'Single developer dependency, mitigated by clean code and an ongoing retainer.',
   ];
 
   return (
@@ -235,7 +235,7 @@ export function Comparison() {
         <div className="px-5 py-4" style={{ borderTop: '1px solid var(--border)', background: 'rgba(92,99,64,0.06)' }}>
           <p style={{ fontSize: '0.7rem', fontWeight: 700, color: 'var(--color-olive)', marginBottom: 4 }}>Verdict</p>
           <p style={{ fontSize: '0.78rem', color: 'var(--foreground)', lineHeight: 1.6 }}>
-            For a standard GP, HealthAccess is fine. For a multi-discipline, aesthetics-forward, tech-forward practice like Fluid Medical — a custom platform is the only option that will keep up with how the business actually grows.
+            For a standard GP, HealthAccess does the job. For a multi-discipline, aesthetics-forward, tech-forward practice like Fluid Medical, a generic tool will always be a workaround. A custom platform is the only thing that keeps up with how you actually grow.
           </p>
         </div>
       </div>
@@ -259,7 +259,7 @@ export function Timeline() {
     <div className="space-y-4">
       {/* Bar chart */}
       <div className="card p-5">
-        <p style={{ fontSize: '0.75rem', color: 'var(--muted-foreground)', marginBottom: 16 }}>Indicative timeline assuming ~20 billable hours/week. Can be accelerated with agreed sprint commitments.</p>
+        <p style={{ fontSize: '0.75rem', color: 'var(--muted-foreground)', marginBottom: 16 }}>Indicative timeline assuming around 20 billable hours per week. Can be accelerated with agreed sprint commitments.</p>
         <div className="space-y-5">
           {milestones.map((m, i) => (
             <div key={m.phase}>
@@ -292,7 +292,7 @@ export function Timeline() {
           ))}
         </div>
         <div style={{ marginTop: 16, paddingTop: 12, borderTop: '1px solid var(--border)' }}>
-          <p style={{ fontSize: '0.7rem', color: 'var(--muted-foreground)' }}>📅 Total estimated: <strong>13–14 weeks</strong> from kick-off · <strong>~212 billable hours</strong></p>
+          <p style={{ fontSize: '0.7rem', color: 'var(--muted-foreground)' }}>📅 Total estimated: <strong>13 to 14 weeks</strong> from kick-off · <strong>~212 billable hours</strong></p>
         </div>
       </div>
     </div>
@@ -303,10 +303,10 @@ export function Timeline() {
 
 export function NextSteps() {
   const steps = [
-    { num: '01', title: 'Agree on phase and rate', desc: 'Phase 1 is recommended as a starting point so the team gets immediate value quickly.' },
-    { num: '02', title: 'Sign a simple service agreement', desc: 'Covering IP ownership (you own everything built), payment terms (50% upfront, 50% on delivery per phase), and confidentiality.' },
-    { num: '03', title: 'Kick-off call', desc: '1 hour with Fritz and Matty to walk through Phase 1 in detail and confirm any workflow nuances before development starts.' },
-    { num: '04', title: 'Weekly progress updates', desc: 'Short Loom video or WhatsApp voice note each Friday showing what was built that week.' },
+    { num: '01', title: 'Agree on scope and rate', desc: 'I recommend starting with Phase 1 so the team gets real value quickly without a huge upfront commitment.' },
+    { num: '02', title: 'Sign a simple service agreement', desc: 'Covering IP ownership (you own everything I build), payment terms (50% upfront, 50% on delivery per phase), and confidentiality.' },
+    { num: '03', title: 'Kick-off call', desc: "One hour with Fritz and Carl (or whoever makes sense) to walk through Phase 1 in detail and confirm any workflow nuances before I start building." },
+    { num: '04', title: 'Weekly updates', desc: 'A short Loom video or WhatsApp voice note every Friday showing what got built that week.' },
   ];
 
   return (

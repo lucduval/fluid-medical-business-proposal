@@ -168,12 +168,12 @@ export default function Page() {
             id="executive-summary"
             label="Section 1"
             title="Executive Summary"
-            intro="Fluid Medical currently operates on a basic CRM MVP (Contacts, Leads, Appointments, Invoices, Doctors) built on a modern, scalable stack: Next.js, Convex, Clerk, and Vercel. This proposal outlines the next phase of development — expanding the platform into a fully-featured, bespoke practice management system tailored specifically to Fluid Medical's clinical, administrative, and patient engagement needs."
+            intro="Fluid Medical already has a solid CRM foundation I built: Contacts, Leads, Appointments, Invoices, and Doctors, running on Next.js, Convex, Clerk, and Vercel. This proposal is the natural next step: turning that foundation into a fully-featured practice management platform built specifically around the way you work."
           >
             <div className="rounded-2xl p-6" style={{ background: 'rgba(92,99,64,0.06)', border: '1.5px solid rgba(92,99,64,0.2)' }}>
               <p style={{ fontWeight: 700, fontFamily: 'Georgia, serif', fontSize: '1rem', marginBottom: 8 }}>The goal</p>
               <p style={{ fontSize: '0.9rem', color: 'var(--muted-foreground)', lineHeight: 1.8 }}>
-                To consolidate every tool the practice needs into a single, fast, customisable platform that grows with the business — replacing generic SaaS tools with something built around the way Fluid Medical actually works.
+                To bring every tool the practice needs into one fast, customisable platform that grows with the business. No more working around generic software. Something that fits Fluid Medical, not the other way around.
               </p>
             </div>
           </Section>
@@ -183,7 +183,7 @@ export default function Page() {
             id="current-stack"
             label="Section 2"
             title="Current Stack"
-            intro="The existing platform is already built on a best-in-class, production-ready stack. This proposal builds on top of it — there is no need to rebuild from scratch."
+            intro="The foundation is already there and it's solid. Everything I'm proposing builds on top of what exists. No starting over, no migration risk."
           >
             <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
               <StackBadge layer="Frontend" tech="Next.js (App Router)" icon="▲" />
@@ -212,7 +212,7 @@ export default function Page() {
             <FeatureCard
               num="3.1"
               title="Doctor Booking Links + Collective Calendar"
-              desc="Each doctor receives a public, shareable booking link displaying their real-time availability. Patients select a service, choose a time slot, and confirm their booking. Matty gets access to a collective calendar view showing all doctors simultaneously, with drag-and-drop rescheduling."
+              desc="Each doctor gets a public booking link showing their live availability. Patients pick a service, choose a time, and confirm. Matty gets a collective calendar with all doctors side by side and drag-and-drop rescheduling."
               effort="20 hours"
               phase="1"
             >
@@ -222,7 +222,7 @@ export default function Page() {
             <FeatureCard
               num="3.2"
               title="Online Payments — PayFast Integration"
-              desc="Patients can pay for their consultation at the time of booking or via an invoice link sent post-consult. PayFast handles card, EFT, and SnapScan payments. Payments are reconciled automatically against the relevant invoice in the system."
+              desc="Patients can pay at the time of booking or via an invoice link after their consult. PayFast handles card, EFT and SnapScan. Payments reconcile automatically against the invoice."
               effort="10 hours"
               phase="1"
             >
@@ -232,7 +232,7 @@ export default function Page() {
             <FeatureCard
               num="3.3"
               title="Patient Registration Form"
-              desc="A digital registration form sent to patients automatically after booking. Captures all new patient information before the consult so no paper forms are needed on arrival. Completion status visible on appointment card."
+              desc="A digital registration form goes out automatically after a booking is made. All new patient info is captured before the consult so there are no paper forms on arrival. Completion status shows on the appointment card."
               effort="8 hours"
               phase="1"
             >
@@ -242,7 +242,7 @@ export default function Page() {
             <FeatureCard
               num="3.4"
               title="Consent Form (Digital Signature)"
-              desc="A procedure-specific consent form that can be sent to a patient before or during their consult. The patient signs digitally on their device or a tablet in-room. Signed forms auto-saved as PDFs against the patient's encounter record."
+              desc="A procedure-specific consent form that can be sent before or during a consult. The patient signs digitally on their own device or a tablet in the room. Signed forms are auto-saved as PDFs against the encounter record."
               effort="12 hours"
               phase="1"
             >
@@ -255,7 +255,7 @@ export default function Page() {
             <FeatureCard
               num="3.5"
               title="Services Page & Quick Billing"
-              desc="A master list of all Fluid Medical services with associated pricing, service type, and default duration. Doctors and admin can add services to an invoice in one click during or after a consult."
+              desc="A master list of all Fluid Medical services with pricing, type, and duration. Doctors and admin can add any service to an invoice in a single click, during or after a consult."
               effort="8 hours"
               phase="2"
             >
@@ -290,7 +290,7 @@ export default function Page() {
             <FeatureCard
               num="3.6"
               title="ICD-10 Code Billing System"
-              desc="A searchable, filterable database of ICD-10 diagnosis codes embedded in the invoicing workflow. Doctors can search by keyword or code number and attach codes to each invoice line item for medical aid billing. Frequently used codes saved as doctor favourites."
+              desc="A searchable ICD-10 database built into the invoicing workflow. Doctors search by keyword or code and attach diagnoses to invoice line items for medical aid billing. Most-used codes save as personal favourites per doctor."
               effort="12 hours"
               phase="2"
             >
@@ -300,7 +300,7 @@ export default function Page() {
             <FeatureCard
               num="3.7"
               title="Invoicing Enhancement (Insurance & Medical Aid Codes)"
-              desc="Expanding the existing MVP invoice system to support formal medical billing requirements, including procedure codes (NHRPL/tariff codes), ICD-10 codes, VAT handling, and medical aid-compatible invoice formatting. PDF generation with practice letterhead."
+              desc="Building on the existing MVP invoices to meet formal billing requirements: NHRPL procedure codes, ICD-10 codes, VAT, and medical aid-compatible formatting. PDF generation includes the practice letterhead and doctor details."
               effort="14 hours"
               phase="2"
             >
@@ -354,7 +354,7 @@ export default function Page() {
             <FeatureCard
               num="3.8"
               title="Prescription Generator"
-              desc="The doctor types the prescription into a structured form. The system generates a professional PDF prescription with the doctor's details, signature, stamp, and patient information automatically populated. Schedule 5/6 handling flags controlled substances."
+              desc="The doctor fills in a structured prescription form and the system generates a professional PDF with the doctor's details, signature, stamp and patient info pre-filled. Schedule 5 and 6 substances are flagged automatically."
               effort="20 hours"
               phase="2"
             >
@@ -367,7 +367,7 @@ export default function Page() {
             <FeatureCard
               num="3.9"
               title="Patient Notes Per Encounter"
-              desc="Each appointment has a dedicated clinical notes section. The doctor can write structured notes, free text, or upload files (lab results, referral letters, photos). Notes are locked after 24 hours and require a reason to edit (audit trail)."
+              desc="Every appointment has its own clinical notes section. The doctor can write structured or free-text notes and attach files like lab results, referral letters or photos. Notes lock after 24 hours and any edits require a reason, keeping a clean audit trail."
               effort="12 hours"
               phase="3"
             >
@@ -377,7 +377,7 @@ export default function Page() {
             <FeatureCard
               num="3.10"
               title="Heidi Health Integration (AI Medical Scribe)"
-              desc="Heidi is an AI-powered medical scribe that listens to the consultation and generates clinical notes automatically. This integration embeds Heidi's output directly into the patient's encounter notes so the doctor doesn't switch between systems."
+              desc="Heidi listens to the consultation and writes the clinical notes automatically. This integration pulls Heidi's output directly into the patient's encounter record so the doctor never needs to leave the platform."
               effort="12 hours"
               phase="3"
             >
@@ -416,7 +416,7 @@ export default function Page() {
             <FeatureCard
               num="3.11"
               title="Aesthetic Planner (SVG Face & Body Annotation Tool)"
-              desc="A purpose-built visual tool for recording aesthetic procedures. The doctor selects a face or body diagram and annotates injection points directly on the SVG — recording product, units injected, dilution, and clinical notes per point. Saved as PDF in encounter record."
+              desc="A proper visual tool for recording aesthetic procedures. The doctor picks a face or body diagram and annotates injection points directly on the diagram, capturing product, units, dilution and clinical notes per point. Saved as a PDF in the encounter record."
               effort="24 hours"
               phase="3"
             >
@@ -426,7 +426,7 @@ export default function Page() {
             <FeatureCard
               num="3.12"
               title="Before & After Photography"
-              desc="A structured photo gallery per patient, organised by date and body area. Photos are uploaded per encounter and displayed in a side-by-side comparison view for clinical review and patient consultations. Access controlled via Convex."
+              desc="A structured photo gallery per patient, organised by date and body area. Photos upload per encounter and display side by side for clinical review or patient consultations. Access is permission-controlled."
               effort="12 hours"
               phase="3"
             >
@@ -436,7 +436,7 @@ export default function Page() {
             <FeatureCard
               num="3.13"
               title="Consumables & Stock Management with Billing Templates"
-              desc="A product and consumable inventory system that tracks stock levels and supports procedure billing templates. A 'Minor Excision' template automatically adds the relevant consumables to the invoice with one click, deducting from stock simultaneously."
+              desc="A product and consumable inventory that tracks stock levels and supports procedure billing templates. A 'Minor Excision' template, for example, adds all the relevant consumables to the invoice in one click and deducts from stock at the same time."
               effort="20 hours"
               phase="3"
             >
@@ -449,7 +449,7 @@ export default function Page() {
             <FeatureCard
               num="3.14"
               title="WhatsApp Survey & Symptom Tracking (Official API)"
-              desc="Using the official WhatsApp Business API (via 360dialog), doctors can send custom surveys to patients via WhatsApp — symptom scores, pain scales, PHQ-9 depression screening, diet and exercise check-ins, and post-procedure follow-ups. Responses stored against patient record."
+              desc="Using the official WhatsApp Business API via 360dialog, doctors can send custom surveys directly to patients: symptom scores, pain scales, PHQ-9 screening, diet and exercise check-ins, post-procedure follow-ups. All responses are stored against the patient record."
               effort="28 hours"
               phase="4"
             >
@@ -519,7 +519,7 @@ export default function Page() {
             id="pricing"
             label="Section 5"
             title="Pricing"
-            intro="The rate below reflects the existing relationship and is well below the standard South African senior developer market rate of R1,200–R1,800/hr."
+            intro="Given our working relationship, I'm quoting well below the standard South African senior developer market rate of R1,200 to R1,800 per hour."
           >
             <div className="space-y-8">
               <div>
@@ -529,7 +529,7 @@ export default function Page() {
               <div>
                 <h3 style={{ fontWeight: 700, fontSize: '1rem', marginBottom: 16 }}>5.2 Monthly Retainer (Post-Build)</h3>
                 <p style={{ fontSize: '0.875rem', color: 'var(--muted-foreground)', lineHeight: 1.7, marginBottom: 16 }}>
-                  The monthly retainer covers hosting management, bug fixes, security updates, minor UI changes, and ongoing support. Retainer pricing is open for discussion and will be agreed upon closer to the time of go-live.
+                  Once we're live, we'd agree on a monthly retainer to cover hosting, bug fixes, dependency updates, minor changes and ongoing support. Pricing for this is open for discussion and we can figure it out closer to go-live.
                 </p>
               </div>
               <div>
