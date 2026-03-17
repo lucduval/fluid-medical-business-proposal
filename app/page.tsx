@@ -168,7 +168,7 @@ export default function Page() {
             id="executive-summary"
             label="Section 1"
             title="Executive Summary"
-            intro="Fluid Medical already has a solid CRM foundation I built: Contacts, Leads, Appointments, Invoices, and Doctors, running on Next.js, Convex, Clerk, and Vercel. This proposal is the natural next step: turning that foundation into a fully-featured practice management platform built specifically around the way you work."
+            intro="Fluid Medical already has a basic MVP with: Contacts, Leads, Appointments, Invoices, and Doctors, running on Next.js, Convex, Clerk, and Vercel. This proposal is the natural next step: turning that foundation into a fully-featured practice management platform built specifically around the way you work."
           >
             <div className="rounded-2xl p-6" style={{ background: 'rgba(92,99,64,0.06)', border: '1.5px solid rgba(92,99,64,0.2)' }}>
               <p style={{ fontWeight: 700, fontFamily: 'Georgia, serif', fontSize: '1rem', marginBottom: 8 }}>The goal</p>
