@@ -182,7 +182,7 @@ export default function Page() {
           <Section
             id="current-stack"
             label="Section 2"
-            title="Current Stack"
+            title="Recommended Stack"
             intro="The foundation is already there and it's solid. Everything I'm proposing builds on top of what exists. No starting over, no migration risk."
           >
             <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
